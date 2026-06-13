@@ -10,7 +10,7 @@ admin.site.unregister(Group)
 
 @admin.register(Post)
 class PostAdmin(TranslationAdmin):
-    list_display = ('title', 'created_at')
+    list_display = ('title',)
 
     # Admin panelda tillarni bir-biriga o'tuvchi Tab (oyna) ko'rinishiga keltirish
     class Media:
